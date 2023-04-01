@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo de Atualização de Campo</title>
+</head>
+<body>
+	<label for="campo1">Digite algo:</label>
+	<input type="text" id="campo1" onkeyup="atualizarCampo2()">
+
+	<label for="campo2">O que você digitou:</label>
+	<input type="text" id="campo2">
+
+	<script>
+		function atualizarCampo2() {
+			var textoDigitado = document.getElementById("campo1").value;
+			document.getElementById("campo2").value = textoDigitado;
+		}
+	</script>
+</body>
+</html>
